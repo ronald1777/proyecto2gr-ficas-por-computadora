@@ -1,0 +1,12 @@
+[package]
+name = "diorama_nocturno"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+minifb = "0.29"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
