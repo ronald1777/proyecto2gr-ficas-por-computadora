@@ -9,6 +9,9 @@
 
 ![Vista del diorama](preview.png)
 
+
+
+
 </div>
 
 ## Sobre el proyecto
