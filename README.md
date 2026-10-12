@@ -33,24 +33,6 @@ Para girar la cámara, arrastre con el botón izquierdo del ratón. Si mueve el 
 
 El modo de bajos recursos muestra una vista de 120×90 píxeles para que el programa responda mejor en equipos modestos. El modo normal ofrece más detalle y termina de dibujar la imagen al soltar el ratón.
 
-## Guardar una imagen
-
-Si prefiere generar una imagen sin abrir la ventana, ejecute:
-
-```sh
-cargo run --release -- 0.0 1.0 diorama.ppm
-```
-
-Los argumentos indican el ángulo de la cámara en radianes, el zoom —entre `0.65` y `1.8`— y el nombre del archivo de salida. Puede cambiar el ángulo para obtener otra vista de la isla.
-
-## Crear un video
-
-Para generar un video con una vuelta alrededor del diorama, ejecute:
-
-```sh
-./generar_video.sh
-```
-
 El script crea los cuadros y los reúne en un video con `ffmpeg`.
 
 ## Qué encontrará en la escena
@@ -58,8 +40,4 @@ El script crea los cuadros y los reúne en un video con `ffmpeg`.
 - Una isla de bloques de césped, tierra y roca, con alturas generadas mediante ruido determinista.
 - Un observatorio de cristal y madera, un arroyo, piedras, un pequeño puente y varias lámparas.
 - Reflejos, refracción, sombras y brillos calculados por trazado de rayos.
-- Un cielo que cambia entre día y noche; de noche aparecen estrellas y un disco solar tenue.
-
-## Publicación
-
-Cuando publique el proyecto o el video, puede añadir aquí el enlace correspondiente.
+- Un cielo que cambia entre día y noche 
